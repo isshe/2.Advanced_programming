@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 {
     DIR     *dp = NULL;
     struct  dirent      *dirp = NULL;
-    int     n = 0;
+ //   int     n = 0;
 
     if (argc != 2)
     {
@@ -33,19 +33,19 @@ int main(int argc, char **argv)
 
     while ((dirp = readdir(dp)) != NULL)
     {
-        printf("%s\t\t", dirp->d_name);
+        printf("%s\n", dirp->d_name);
 
-        n++;
+/*        n++;
         if (n == 4)
         {
              n = 0;
              printf("\n");
         }
-
+*/
 //        n++;
     }
 
-    printf("\n");
+//    printf("\n");
     closedir(dp);
     exit(0);
 }
