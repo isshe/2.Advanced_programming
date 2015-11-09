@@ -37,7 +37,7 @@
 
 #define MAX(a, b)           ((a) > (b) ? (a) : (b))     //这里改大写了
 
-
+#define	FILE_MODE	(S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
 
 typedef void Sigfunc(int);      //for signal handlers
 
