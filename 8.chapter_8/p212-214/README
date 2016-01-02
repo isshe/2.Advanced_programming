@@ -1,0 +1,6 @@
+test1:
+    gcc -O2 -Wall -I ../../include  ../../lib/*.c  p192xxx.c p212xxx.c p213xxx.c
+
+test2:
+    gcc -O2 -Wall -I ../../include ../../lib/*.c printuids.c -o printuids
+    gcc -O2 -Wall -I ../../include ../../lib/*.c p192xxx.c p212xxx.c p214_myxxx.c
