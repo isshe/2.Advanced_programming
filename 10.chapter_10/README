@@ -1,0 +1,16 @@
+p257: 捕捉SIGUSER1和SIGUSER2的信号程序.
+p263: 这段程序从信号处理程序my_alarm调用非可重入函数getpwanm， 
+        而my_alarm每秒钟调用一次。实验表明，my_alarm中的getpwnam会影响到信号。
+        原因暂时不懂， 日后看此书第二遍。
+p265: 不能正常工作的System V SIGCLD处理函数.
+p269: sleep的简化而不完整的实现.
+p270: 使用setjmp()和longjmp()的sleep实现, 同样是不完善的实现.
+p270_2: 在一个捕捉其他信号的程序中调用sleep2();
+p271: 带时间限制的read函数;但是如果系统调用read会自动重启, 则此实现无效.
+p272: 使用longjmp, 带时间限制调用read();
+p275: 打印调用进程信号屏蔽字中的信号字, p284,p287的程序会调用此程序.
+p277: 信号设置和sigprocmask实例.
+p281: 用sigaction实现的signal函数;
+p281: 用sigaction实现的signal函数:力图阻止被中断的系统调用的重启, 
+        和p281想差的只是注释掉的部分.
+p283: 信号屏蔽,sigsetjmp(), siglongjmp的实例, 使用到p275页的pr_mask();

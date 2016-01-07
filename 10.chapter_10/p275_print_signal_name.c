@@ -56,6 +56,7 @@ pr_mask(const char *str)
     errno = errno_save;
 }
 
+/*
 int
 main(void)
 {
@@ -63,3 +64,4 @@ main(void)
 
      return 0;
 }
+*/
