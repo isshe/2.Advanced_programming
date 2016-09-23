@@ -26,8 +26,8 @@ main(void)
     }
     else if (pid == 0)
     {
-         if (execl("/home/isshe/1.code/2.Advanced_programming/8.chapter_8/testinterp",
-                     "testinterp", "myarg1", "MY ARG2", (char *)0) < 0)
+         if (execl("/home/isshe/Nutstore/Code/2.Advanced_programming/8.chapter_8/testinterp",
+                     "testintp", "myarg1", "MY ARG2", (char *)0) < 0)
          {
              err_sys("execl error");
          }

@@ -33,7 +33,7 @@ my_system(const char *cmdstring)    //version without signal handling
     }
     else if (pid == 0)          //child
     {
-         execl("/bin/sh", "sh", "-c", cmdstring, (char *)0);
+         execl("/bin/sh","xxxxxxxxxxxx11111", "-c", cmdstring, (char *)0);
          _exit(127);
     }
     else                        //parent

@@ -24,7 +24,7 @@ main(void)
 {
     int     status = 0;
 
-    if ((status = my_system("date")) < 0)
+    if ((status = my_system("top")) < 0)
     {
         err_sys("my_system error");
     }
