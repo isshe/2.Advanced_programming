@@ -17,7 +17,7 @@
 #include <unistd.h>
 
 int
-my_system(const char *cmdstring)    //version without signal handling
+system(const char *cmdstring)    //version without signal handling
 {
     pid_t   pid;
     int     status = 0;
