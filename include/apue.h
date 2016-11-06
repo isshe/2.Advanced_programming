@@ -49,6 +49,15 @@ void    err_sys(const char *, ...) __attribute__((noreturn));
 void    err_cont(int, const char *, ...);
 void    err_exit(int, const char *, ...) __attribute__((noreturn));
 
+//设置文件状态标志 fcntl
+void	 clr_fl(int, int);
+void	 set_fl(int, int);					/* {Prog setfl} */
+
+void	TELL_WAIT(void);		/* parent/child from {Sec race_conditions} */
+void	TELL_PARENT(pid_t);
+void	TELL_CHILD(pid_t);
+void	WAIT_PARENT(void);
+void	WAIT_CHILD(void);
 
 #endif
 
