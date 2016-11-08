@@ -53,6 +53,10 @@ void    err_exit(int, const char *, ...) __attribute__((noreturn));
 void	 clr_fl(int, int);
 void	 set_fl(int, int);					/* {Prog setfl} */
 
+//最大打开文件描述符
+long	 open_max(void);					/* {Prog openmax} */
+
+//用信号实现的进程同步函数，也可以用管道实现
 void	TELL_WAIT(void);		/* parent/child from {Sec race_conditions} */
 void	TELL_PARENT(pid_t);
 void	TELL_CHILD(pid_t);
