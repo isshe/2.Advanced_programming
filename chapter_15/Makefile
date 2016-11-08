@@ -13,6 +13,12 @@ all:
 	make p437 
 	make p440 
 	make p441 
+	make p442 
+	make p443 
+	make p444 
+	make p462 
+	make p464 
+	make p469 
 
 
 p432:
@@ -49,6 +55,15 @@ p443:
 
 p444:
 	$(CC) $(CFLAGS) $(INC) $(SRC) ./p444_add_stdio.c -o p444.out $(LIB)
+
+p462:
+	$(CC) $(CFLAGS) $(INC) $(SRC) ./p462_tshm.c -o p462.out $(LIB)
+
+p464:
+	$(CC) $(CFLAGS) $(INC) $(SRC) ./p464_devzero_mmap_IO.c -o p464.out $(LIB)
+
+p469:
+	$(CC) -c ./p469_sem_lock.c $(INC) $(SRC)
 
 
 .PHONE:clean 
