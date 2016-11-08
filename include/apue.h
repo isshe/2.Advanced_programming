@@ -63,5 +63,9 @@ void	TELL_CHILD(pid_t);
 void	WAIT_PARENT(void);
 void	WAIT_CHILD(void);
 
+//使用socketpair创建一堆相互连接的UNIX域流套接字
+int fd_pipe(int fd[2]);
+
+
 #endif
 
